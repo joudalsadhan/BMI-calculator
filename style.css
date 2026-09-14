@@ -1,0 +1,119 @@
+/* Styling for the BMI Calculator:
+   Sets overall page layout, colors, input styles, 
+   error styling and button layout. */
+body {
+    background-color: #82C8E5;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    width: 90%;
+    max-width: 450px;
+    text-align: center;
+}
+
+h1 {
+    color: #007BFF;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 18px;
+    text-align: left;
+    position: relative;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 6px;
+    color: #6A5ACD;
+    font-size: 16px;
+}
+
+.input-group input,
+.input-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+input:focus,
+select:focus {
+    border: 2px solid #6A5ACD;
+    box-shadow: 0 0 5px rgba(106, 90, 205, 0.5);
+    outline: none;
+}
+
+
+.error {
+    color: #d9534f;
+    font-size: 0.875rem;
+    margin-top: 4px;
+}
+
+.input-group.error input,
+.input-group.error select {
+    border-color: #d9534f;
+    box-shadow: 0 0 3px rgba(217, 83, 79, 0.4);
+}
+
+
+.button-group { 
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+button {
+    width: 48%; 
+    padding: 12px 0;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    color: #ffffff;
+}
+
+button#calculateBtn {
+    background-color: #28a745; 
+}
+
+button#calculateBtn:hover {
+    background-color: #218838; 
+}
+
+button#resetBtn {
+    background-color: #dc3545; 
+}
+
+button#resetBtn:hover {
+    background-color: #c82333; 
+}
+
+#result {
+    margin-top: 22px;
+    font-size: 18px;
+    color: #333333;
+}
+
+.result-normal {
+    color: #28a745;
+}
+
+.result-other {
+    color: #d9534f;
+}
